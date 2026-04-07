@@ -1,7 +1,12 @@
 aid: amkor-technology
-url: https://raw.githubusercontent.com/api-evangelist/amkor-technology/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/amkor-technology/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.amkor-technology.com
+description: >-
+  Amkor Technology is one of the world's largest providers of outsourced semiconductor
+  packaging and test services, serving integrated device manufacturers, fabless semiconductor
+  companies, and contract foundries.
