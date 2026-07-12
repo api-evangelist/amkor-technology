@@ -40,6 +40,8 @@ apis:
       for chip manufacturers worldwide. The company does not currently publish a public
       developer API.
 common:
+  - type: DomainSecurity
+    url: security/amkor-technology-domain-security.yml
   - type: Portal
     url: https://www.amkor.com
   - type: PrivacyPolicy
