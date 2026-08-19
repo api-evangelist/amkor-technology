@@ -33,7 +33,7 @@ tags:
   - Fortune 1000
 created: '2024-01-01'
 modified: '2026-04-19'
-specificationVersion: '0.18'
+specificationVersion: '0.23'
 apis:
   - aid: amkor-technology:website
     name: Amkor Technology Website
