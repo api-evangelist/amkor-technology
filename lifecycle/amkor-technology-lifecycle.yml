@@ -1,0 +1,46 @@
+generated: '2026-09-02'
+method: searched
+source: https://amkor.com/ (sitemap walk of all 153 published pages) plus DNS probes for status./trust. subdomains
+provider: Amkor Technology
+providerId: amkor-technology
+description: >-
+  API lifecycle posture for Amkor Technology. Amkor publishes no web API and therefore no API
+  versioning policy, no deprecation policy, no Sunset/Deprecation header commitment and no API status
+  page. Recorded as an honest absence rather than omitted, so the gap is visible instead of unmeasured.
+versioning:
+  scheme: none-published
+  current_version: null
+  note: >-
+    No API version scheme is published. The B2B integration surface
+    (https://amkor.com/b2b-integration-services-solutions/) describes protocols and message formats but
+    states no version or change-management policy.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  url: null
+  note: No deprecation or sunset policy found on any of the 153 pages in amkor.com/page-sitemap.xml.
+status_page:
+  published: false
+  url: null
+  evidence:
+    - url: https://status.amkor.com/
+      status: NXDOMAIN
+    - url: https://trust.amkor.com/
+      status: NXDOMAIN
+  note: >-
+    No status or trust subdomain resolves. Amkor's B2B page advertises "24 hours a day, 7 days a week"
+    B2B support with named account managers, but that is a human support commitment, not a machine-readable
+    status surface.
+sla:
+  published: false
+  note: No public SLA. Service levels are set in the customer's manufacturing services agreement.
+support:
+  url: https://amkor.com/contact-us/
+  b2b_support: >-
+    Centralized B2B support 24x7 with dedicated account managers at global sales offices and factory sites
+    (https://amkor.com/b2b-integration-services-solutions/).
+deprecated_operations: []
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com

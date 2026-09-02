@@ -43,7 +43,7 @@ tags:
   - Electronics Manufacturing
   - Fortune 1000
 created: '2024-01-01'
-modified: '2026-04-19'
+modified: '2026-09-02'
 specificationVersion: '0.23'
 apis:
   - aid: amkor-technology:website
@@ -62,17 +62,53 @@ apis:
       Amkor Technology provides outsourced semiconductor packaging and test services
       for chip manufacturers worldwide. The company does not currently publish a public
       developer API.
+  - aid: amkor-technology:b2b-integration
+    name: Amkor B2B Integration Services
+    tags:
+      - B2B Integration
+      - EDI
+      - RosettaNet
+      - Supply Chain
+      - Semiconductor Packaging
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+    humanURL: https://amkor.com/b2b-integration-services-solutions/
+    properties:
+      - type: Documentation
+        url: https://amkor.com/b2b-integration-services-solutions/
+      - type: Conformance
+        url: conformance/amkor-technology-conformance.yml
+    description: >-
+      Amkor's centralized B2B infrastructure for exchanging manufacturing information between its
+      factories, sales teams and customers. Delivery protocols published by Amkor are RosettaNet RNIF,
+      FTP/SFTP, EDI over VAN and AS2, SOAP Web Services over HTTPS, MQ and JMS; message formats are
+      RosettaNet PIPs, delimited flat files, EDI, XML, EDI/EDIFACT, Excel and text reports. Transaction
+      categories are lot status and transactions, shipping and billing information, customer purchase
+      orders and build instructions. NO baseURL is recorded because Amkor publishes no endpoint, WSDL
+      or PIP list: connectivity, certificates and credentials are provisioned per customer during
+      commercial onboarding, so the surface is real but partner-gated.
 common:
   - type: DomainSecurity
     url: security/amkor-technology-domain-security.yml
-  - type: Portal
-    url: https://www.amkor.com
+  - type: Website
+    url: https://amkor.com
   - type: PrivacyPolicy
-    url: https://www.amkor.com/privacy-policy
+    url: https://amkor.com/privacy-notice/
   - type: TermsOfService
-    url: https://www.amkor.com/terms-of-use
+    url: https://amkor.com/legal/
   - type: Support
-    url: https://www.amkor.com/contact
+    url: https://amkor.com/contact-us/
+  - type: Blog
+    url: https://amkor.com/blog/
+  - type: Conformance
+    url: conformance/amkor-technology-conformance.yml
+  - type: Compliance
+    url: conformance/amkor-technology-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/amkor-technology-lifecycle.yml
+  - type: Packages
+    url: packages/amkor-technology-packages.yml
+  - type: LLMsTxt
+    url: llms/amkor-technology-llms.txt
   - type: LinkedIn
     url: https://www.linkedin.com/company/amkor-technology
   - type: X
@@ -120,3 +156,26 @@ common:
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: >-
+    Amkor publishes no web API at all; its only machine-to-machine surface is the B2B Integration
+    Services stack (RosettaNet/EDI/AS2/SFTP/SOAP) whose endpoints, WSDLs and PIP numbers are issued
+    only under a commercial agreement, and the one live application host, api.amkor.com, answers 403
+    from an Imperva/Incapsula edge to every anonymous request including the site root.
+  evidence:
+    - url: https://api.amkor.com/
+      status: 403
+    - url: https://amkor.com/b2b-integration-services-solutions/
+      status: 200
+    - url: https://amkor.com/openapi.json
+      status: 404
+    - url: https://amkor.com/.well-known/agent-card.json
+      status: 404
+  checked: '2026-09-02'

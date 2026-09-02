@@ -1,0 +1,65 @@
+# Amkor Technology
+
+> Amkor Technology is the world's largest US-based provider of outsourced semiconductor packaging and
+> test services (OSAT), serving integrated device manufacturers, fabless semiconductor companies and
+> contract foundries. Amkor does NOT publish a public developer API, an OpenAPI description, a GraphQL
+> endpoint, an MCP server or an A2A agent card. Its machine-to-machine surface is a partner-provisioned
+> B2B integration service (EDI, RosettaNet, AS2, SFTP, SOAP over HTTPS) that requires a commercial
+> agreement before any endpoint or credential is issued.
+
+Generated: 2026-09-02
+Method: generated
+Source: apis.yml + probed artifacts in this repository (api-evangelist/amkor-technology)
+
+## Machine-to-machine surface
+
+- [B2B Integration Services](https://amkor.com/b2b-integration-services-solutions/): The only integration
+  surface Amkor documents publicly. Delivery protocols: RosettaNet RNIF, FTP/SFTP, EDI (VAN and AS2),
+  SOAP Web Services (HTTPS), MQ, JMS. Message formats: RosettaNet PIPs, delimited flat files, EDI, XML,
+  EDI/EDIFACT, Excel, text reports. Transaction categories: lot status and transactions, shipping and
+  billing information, customer purchase orders, build instructions. Endpoints, WSDLs, PIP numbers and
+  credentials are NOT published — they are issued during commercial onboarding.
+
+## What is not available (probed, not assumed)
+
+- No OpenAPI/Swagger: https://amkor.com/openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json,
+  /api-docs, /docs, /redoc all return 404.
+- No GraphQL: https://amkor.com/graphql returns 404.
+- No llms.txt served by the provider: https://amkor.com/llms.txt returns 404.
+- No /.well-known documents: security.txt, openid-configuration, oauth-authorization-server,
+  oauth-protected-resource, api-catalog, ai-plugin.json, agent-card.json, agent.json and
+  aauth-resource.json all return 404 on amkor.com.
+- No developer portal: /developer, /developers, /developer-portal, /api all return 404.
+- No published SDKs: zero first-party packages on npm, PyPI, RubyGems. The GitHub org
+  https://github.com/AmkorTechnology exists but is empty and unattributed.
+- api.amkor.com resolves behind an Imperva/Incapsula edge and returns 403 to every anonymous request,
+  including "/". www-app.amkor.com returns 403 Access Denied. Neither exposes an anonymous contract.
+
+## Company
+
+- [Amkor Technology](https://amkor.com): Homepage.
+- [Company Overview](https://amkor.com/amkor-overview/): Who Amkor is and what it does.
+- [Packaging Technologies](https://amkor.com/packaging/): Laminate, leadframe, wafer-level, 2.5D/3D TSV,
+  System-in-Package, chiplet (S-Connect, S-SWIFT), power discrete, memory and sensor packaging.
+- [Applications](https://amkor.com/applications/): AI, automotive, communications, computing, consumer,
+  industrial, IoT, networking.
+- [Document Library](https://amkor.com/document-library/): Package datasheets and technical documents.
+- [Quality](https://amkor.com/quality-management/): Certification set — ISO 9001, ISO 27001, IATF 16949,
+  ISO 14001, ISO 45001, ISO 50001, ISO 14064, ISO/IEC 15408 Common Criteria, AEO, TAPA, GSMA, CNS 15506,
+  with per-factory certificate documents.
+- [News](https://amkor.com/news/) and [Blog](https://amkor.com/blog/): Company announcements and technical posts.
+- [Contact Us](https://amkor.com/contact-us/): Sales and support entry point.
+- [Legal](https://amkor.com/legal/): Terms of use and website terms.
+- [Privacy Notice](https://amkor.com/privacy-notice/): Privacy policy.
+- [Governance](https://amkor.com/corporate-responsibility/governance/): Corporate governance.
+
+## API Evangelist artifacts in this repository
+
+- apis.yml: The APIs.json index for this provider.
+- conformance/amkor-technology-conformance.yml: Certifications and the B2B domain-standard stack.
+- lifecycle/amkor-technology-lifecycle.yml: Versioning, deprecation, status and SLA posture (all absent).
+- packages/amkor-technology-packages.yml: SDK/registry search results (zero first-party packages).
+- plans/amkor-technology-plans-pricing.yml: plan_count 0 — contact-us-only commercial model.
+- rate-limits/amkor-technology-rate-limits.yml: limit_count 0 — no API, no published limits.
+- security/amkor-technology-domain-security.yml: TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe.
+- well-known/amkor-technology-well-known.yml: Full RFC 8615 probe with recorded HTTP statuses.

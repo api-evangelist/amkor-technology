@@ -1,0 +1,156 @@
+generated: '2026-09-02'
+method: searched
+source: https://amkor.com/quality-management/ and https://amkor.com/b2b-integration-services-solutions/
+provider: Amkor Technology
+providerId: amkor-technology
+description: >-
+  Standards and certification conformance for Amkor Technology. Amkor publishes no web API, so none
+  of the usual API-layer conformance targets (OAuth 2.0, OIDC, RFC 9457, JSON:API, OData) apply.
+  What Amkor does publish, and what is captured here, is (a) a large, factory-by-factory certification
+  set on its Quality page, and (b) a named B2B integration standards stack on its B2B Integration
+  Services page — the machine-to-machine contract this company actually ships to customers.
+tags:
+  - Semiconductor Packaging
+  - OSAT
+  - Conformance
+  - Certifications
+  - B2B Integration
+  - EDI
+  - RosettaNet
+conformance:
+  - id: iso-27001
+    name: ISO/IEC 27001 Information Security Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: >-
+        Listed as a held certification on the Quality page, with per-factory certificate documents
+        linked by site (China, Japan, Korea, Malaysia, Philippines, Portugal, Taiwan, Vietnam).
+  - id: iso-9001
+    name: ISO 9001 Quality Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: Held certification, per-factory certificates published.
+  - id: iatf-16949
+    name: IATF 16949 Automotive Quality Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: Automotive quality standard; page also references AIAG Core Tools and VDA 6.3 practice.
+  - id: iso-14001
+    name: ISO 14001 Environmental Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+  - id: iso-45001
+    name: ISO 45001 Occupational Health and Safety Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+  - id: iso-50001
+    name: ISO 50001 Energy Management
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+  - id: iso-14064
+    name: ISO 14064 Greenhouse Gas Verification (Scope 1, 2, 3)
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+  - id: iso-15408-common-criteria
+    name: ISO/IEC 15408 Common Criteria
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: Common Criteria certificate listed for the Portugal site.
+  - id: aeo
+    name: Authorized Economic Operator (AEO)
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: Held in China, Korea and Taiwan.
+  - id: tapa
+    name: TAPA Facility Security Requirements
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: TAPA security certificate listed for the Philippines site.
+  - id: gsma-security-accreditation
+    name: GSMA certificate
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+      note: GSMA certificate listed for Korea and Taiwan.
+  - id: cns-15506
+    name: CNS 15506 (Taiwan)
+    conforms: true
+    evidence:
+      url: https://amkor.com/quality-management/
+  - id: oauth2
+    name: OAuth 2.0
+    conforms: false
+    evidence:
+      url: https://amkor.com/.well-known/oauth-authorization-server
+      note: 404. No public authorization server, no documented OAuth surface.
+  - id: rfc9457
+    name: RFC 9457 Problem Details
+    conforms: false
+    evidence:
+      url: https://amkor.com/openapi.json
+      note: 404. No public OpenAPI, so no error envelope to assess.
+domain_standards:
+  - id: rosettanet-pip
+    name: RosettaNet Partner Interface Processes (PIPs)
+    conforms: true
+    where: >-
+      Named under "Message Formats" on the B2B Integration Services page as a supported message
+      format for customer-to-Amkor manufacturing data exchange.
+    evidence:
+      url: https://amkor.com/b2b-integration-services-solutions/
+      quote: 'Message formats: RosettaNet PIPs, delimited flat files, EDI, XML, EDI/EDIFACT, Excel, and text-based reports.'
+      note: >-
+        Individual PIP numbers are NOT published on the public page; the PIP set is established during
+        commercial onboarding. Recorded as conforming at the family level only.
+  - id: rosettanet-rnif
+    name: RosettaNet Implementation Framework (RNIF)
+    conforms: true
+    where: Named under "Delivery Protocols" on the B2B Integration Services page.
+    evidence:
+      url: https://amkor.com/b2b-integration-services-solutions/
+      quote: 'Delivery protocols: RosettaNet RNIF, File Transfer Protocol (FTP/SFTP), EDI (VAN and AS2), SOAP Web Services (HTTPS), MQ, JMS, Encryption and various third-party suppliers.'
+  - id: edi-x12-edifact
+    name: EDI (ANSI X12 / UN-EDIFACT)
+    conforms: true
+    where: Named as both a delivery protocol (EDI over VAN and AS2) and a message format (EDI, EDI/EDIFACT).
+    evidence:
+      url: https://amkor.com/b2b-integration-services-solutions/
+      note: >-
+        This is the domain-standard signature for an OSAT/electronics supply-chain provider: a customer
+        already speaking X12/EDIFACT integrates without a bespoke connector. Transaction categories named
+        on the page are lot status and transactions, shipping and billing information, customer purchase
+        orders, and build instructions.
+  - id: as2
+    name: AS2 (RFC 4130) EDI over HTTP
+    conforms: true
+    where: Named as an EDI delivery protocol alongside VAN.
+    evidence:
+      url: https://amkor.com/b2b-integration-services-solutions/
+  - id: soap-web-services
+    name: SOAP Web Services over HTTPS
+    conforms: true
+    where: Named as a delivery protocol.
+    evidence:
+      url: https://amkor.com/b2b-integration-services-solutions/
+      note: >-
+        No WSDL is published anywhere public. Probed https://amkor.com/?wsdl (200, but the WordPress
+        homepage, not a WSDL), https://api.amkor.com/?wsdl (403 Imperva) and
+        https://api.amkor.com/services?wsdl (403 Imperva). The SOAP contract is provisioned per customer
+        under a commercial agreement, so no wsdl/ artifact was written.
+notes:
+  - >-
+    Amkor's integration surface is real but partner-gated: the protocols and formats are published,
+    the endpoints, WSDLs, PIP numbers and credentials are not. Nothing was fabricated to fill the gap.
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
