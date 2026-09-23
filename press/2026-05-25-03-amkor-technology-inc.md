@@ -1,7 +1,9 @@
 ---
 title: Amkor Technology, Inc.
 url: https://www.facebook.com/AmkorTechnology/posts/final-preparations-are-underway-for-amkors-investor-day-in-new-york-cityour-firs/1406416311514303/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Amkor Technology" press release artificial intelligence'
 position: 3
 source: serpapi-google
