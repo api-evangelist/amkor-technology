@@ -1,4 +1,4 @@
-# Amkor Technology (amkor-technology)
+# Amkor Technology
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,77 +66,104 @@
 
 Amkor Technology is the world's largest US-based provider of outsourced semiconductor packaging and test services (OSAT), serving integrated device manufacturers, fabless semiconductor companies, and contract foundries. The company offers advanced packaging technologies including flip chip, wafer-level packaging, 2.5D/3D TSV, System-in-Package, and chiplet integration solutions for AI, automotive, communications, computing, consumer electronics, industrial, IoT, and networking markets.
 
-**URL:** [https://www.amkor.com](https://www.amkor.com)
+**Areas:** Semiconductor Packaging · OSAT · Test Services · Advanced Packaging · Chiplets · Automotive · Artificial Intelligence · Electronics Manufacturing · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amkor Technology on APIs.io
 
-## Tags:
+Everything profiled for Amkor Technology is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amkor-technology/](https://apis.io/providers/amkor-technology/)** — or go straight to one of the APIs or properties below.
 
- - Semiconductor Packaging, OSAT, Test Services, Advanced Packaging, Chiplets, Automotive, Artificial Intelligence, Electronics Manufacturing
+### APIs (2)
 
-## Timestamps
+- [Amkor Technology Website](https://apis.io/apis/amkor-technology/website/) — Amkor Technology provides outsourced semiconductor packaging and test services for chip manufacturers worldwide. The company does not currently publish a…
+- [Amkor B2B Integration Services](https://apis.io/apis/amkor-technology/b2b-integration/) — Amkor's centralized B2B infrastructure for exchanging manufacturing information between its factories, sales teams and customers. Delivery protocols…
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amkor Technology Website
-Amkor Technology provides outsourced semiconductor packaging and test services for chip manufacturers worldwide. The company does not currently publish a public developer API.
+#### Security (1)
 
-**Human URL:** [https://www.amkor.com](https://www.amkor.com)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Amkor Technology Domain Security](https://apis.io/security/amkor-technology/amkor-technology-domain-security/)
 
- - Semiconductor Packaging, OSAT, Test Services
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Website](https://www.amkor.com)
+- [Amkor Technology Plans Pricing](https://apis.io/plans/amkor-technology/amkor-technology-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
 
-- [Portal](https://www.amkor.com)
-- [PrivacyPolicy](https://www.amkor.com/privacy-policy)
-- [TermsOfService](https://www.amkor.com/terms-of-use)
-- [Support](https://www.amkor.com/contact)
-- [LinkedIn](https://www.linkedin.com/company/amkor-technology)
-- [X](https://twitter.com/AmkorTech)
+Published request limits.
 
-## Features
+- [Amkor Technology Rate Limits](https://apis.io/rate-limits/amkor-technology/amkor-technology-rate-limits/)
 
-| Name | Description |
-|------|-------------|
-| Laminate Packaging | Advanced laminate packages including CABGA, FBGA, fcCSP, FlipStack CSP, and interposer solutions for high-performance semiconductor devices. |
-| Leadframe Packaging | Leadframe-based packages including LQFP, TQFP, SOIC, SSOP, and fcMLF for cost-optimized semiconductor packaging. |
-| Wafer-Level Packaging | WLCSP and WL3D wafer-level packaging for compact, high-performance semiconductor packages with minimal form factor. |
-| Advanced 2.5D and 3D Packaging | Through-silicon via (TSV) technology for 2.5D and 3D stacked die configurations enabling high-bandwidth interconnects for AI and HPC applications. |
-| System-in-Package | SiP integration combining multiple chips, passives, and sensors into a single package for IoT, wearables, and complex electronic systems. |
-| Chiplet Integration | Proprietary S-Connect and S-SWIFT technologies for advanced chiplet integration enabling heterogeneous integration of multiple die from different foundries. |
-| Power Discrete Packaging | Power semiconductor packages including D2PAK, DPAK, PowerCSP, and PQFN for power management and motor control applications. |
-| Memory and Sensor Packaging | Specialized packaging for MEMS, image sensors, memory modules, and other sensor devices requiring precision assembly. |
-| Semiconductor Testing | Comprehensive semiconductor test services including wafer test, final test, and burn-in for quality assurance and yield optimization. |
+#### FinOps (1)
 
-## Use Cases
+What the API costs to run, by operation.
 
-| Name | Description |
-|------|-------------|
-| AI and High-Performance Computing | Advanced 2.5D/3D packaging and chiplet integration for AI accelerators, data center GPUs, and high-performance computing applications. |
-| Automotive Electronics | Automotive-grade semiconductor packaging for ADAS, electrification, infotainment, and powertrain control modules meeting AEC-Q100 standards. |
-| 5G Communications | RF and mmWave packaging solutions for 5G base stations, smartphones, and infrastructure equipment requiring high-frequency performance. |
-| Consumer Electronics | Cost-optimized packaging for smartphones, tablets, wearables, and consumer devices with compact form factors and high integration. |
-| Industrial and IoT | Robust semiconductor packages for industrial automation, sensors, and IoT devices requiring wide operating temperature ranges. |
-| Memory Packaging | DRAM, NAND flash, and memory module packaging for storage and memory applications in enterprise and consumer markets. |
+- [Amkor Technology Finops](https://apis.io/finops/amkor-technology/amkor-technology-finops/)
 
-## Integrations
+## Where to find this API
 
-| Name | Description |
-|------|-------------|
-| Foundry Partners | Collaboration with leading semiconductor foundries including TSMC, Samsung, and GlobalFoundries for seamless wafer-to-package supply chain integration. |
-| EDA Tool Providers | Integration with electronic design automation tools for package design, thermal simulation, and signal integrity analysis. |
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Maintainers
+- [Website](https://amkor.com)
+- [Support](https://amkor.com/contact-us/)
+- [Blog](https://amkor.com/blog/)
+- [Terms of service](https://amkor.com/legal/)
+- [Privacy policy](https://amkor.com/privacy-notice/)
 
-**FN:** API Evangelist
+## API Evangelist rating
 
-**Email:** info@apievangelist.com
+**Kin Score 18.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 28.9 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amkor-technology/](https://apis.io/providers/amkor-technology/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amkor Technology: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amkor-technology/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
