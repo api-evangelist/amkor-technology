@@ -5,6 +5,9 @@ artifacts:
   conformance/amkor-technology-conformance.yml:
     method: searched
     evidence: declared in the artifact
+  eligibility/amkor-technology-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
   finops/amkor-technology-finops.yml:
     method: generated
     evidence: declared in the artifact
@@ -12,6 +15,12 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   heartbeat/2026-11-02.yml:
+    method: unknown
+    evidence: no authorship recorded
+  heartbeat/2026-11-06.yml:
+    method: unknown
+    evidence: no authorship recorded
+  heartbeat/2026-11-13.yml:
     method: unknown
     evidence: no authorship recorded
   integrations/_index.yml:
@@ -23,7 +32,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -92,6 +101,9 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/amkor-technology-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -119,6 +131,9 @@ artifacts:
   press/2026-05-25-05-amkor-technology-semiconductor-packaging-and-test-services.md:
     method: unknown
     evidence: no authorship recorded
+  privacy/amkor-technology-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amkor-technology-rate-limits.yml:
     method: searched
     evidence: declared in the artifact
@@ -140,6 +155,9 @@ artifacts:
   security/amkor-technology-domain-security.yml:
     method: unknown
     evidence: no authorship recorded
+  terms/amkor-technology-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
   well-known/amkor-technology-well-known.yml:
     method: unknown
     evidence: no authorship recorded
